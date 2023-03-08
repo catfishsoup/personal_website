@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Lato_Light';
+    src: url(fonts/Lato/Lato-Light.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Sourcecode_Pro'; 
+    src: url(fonts/static/SourceCodePro-Regular.ttf); 
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/****************************/
+/* Project Title Customization */
+#projectTitle {
+    color: white; 
+    font-size: 4rem;
+    font-family: Roboto_REG;
+    margin-left: 9.5em;
+}
+
+/****************************/
+/* Project Container Grid */
+#projectContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+/****************************/
+/* Overall Project Container */
+.project {
+    margin: 2rem;
+    background-image: url(gradient.jpg);
+    box-shadow: 5px 5px 5px #fbb0a9;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 50ch;
+    height: fit-content;
+}
+
+/* .project:hover {
+
+} */
+/* The top half of the card  */
+.spacer {
+    padding: 5em;
+}
+
+/* The bottom half of the card */
+.whiteBG {
+    position: relative;
+    background-color: white;
+    padding: 6em;
+    margin: 0;
+}
+
+.whiteBG h2 {
+    /* Bottom half - Title  */
+    position: absolute;
+    font-family: Roboto_REG;
+    padding-left: 5px;
+    top: 5%;
+    left: 0%;
+}
+
+.whiteBG p {
+    /* Bottom half - Description  */
+    position: absolute;
+    font-family: Lato_Light;
+    padding-left: 5px;
+    font-size: 0.9rem;
+    left: 0;
+    top: 25%;
+    width: 45ch;
+}
+
+/* Bottom Half - Language Tags */
+.langTags {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45ch;
+}
+.langTags li {
+    bottom: 0;
+    padding: 3px;
+    font-size: 0.7rem;
+    font-family: Sourcecode_Pro;
+    border: 1px solid aqua;
+    border-radius: 3px;
+    margin: 5px;
+    float: left;
+    text-decoration: none;
+}
+
+.githubIcon {
+    border: 2px solid red;
+    width: 50px;
+    height: 50px;
+}

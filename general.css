@@ -1,0 +1,53 @@
+* {
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    background-color: #F88379;
+}
+@font-face {
+    font-family: 'Sourcecode_Pro'; 
+    src: url(fonts/static/SourceCodePro-Regular.ttf); 
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Roboto_REG'; 
+    src: url(fonts/Roboto/Roboto-Regular.ttf); 
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato_Light';
+    src: url(fonts/Lato/Lato-Light.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+nav {
+    min-height: 10vh;
+}
+#nav-bar {
+    overflow: hidden; 
+    list-style-type: none;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    width: 100%;
+  }
+
+#nav-bar a {
+    float: right; 
+    display: block;
+    color: #f2f2f2; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17pt;
+    font-family: Roboto_REG;
+}

@@ -1,0 +1,190 @@
+* {
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+    background-color: #F88379; 
+}
+
+/***************************************/ 
+/* Fonts */ 
+@font-face {
+    font-family: 'Sourcecode_Pro'; 
+    src: url(fonts/static/SourceCodePro-Regular.ttf); 
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Roboto_REG'; 
+    src: url(fonts/Roboto/Roboto-Regular.ttf); 
+    font-style: normal;
+    font-weight: normal;
+}
+.title, .skills, .exp_title {
+    font-size: 5rem;
+    color: white;
+    font-family: Roboto_REG;
+}
+
+
+
+/***************************************/ 
+nav {
+    min-height: 10vh;
+}
+#nav-bar {
+    overflow: hidden; 
+    list-style-type: none;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    width: 100%;
+  }
+
+#nav-bar a {
+    float: right; 
+    display: block;
+    color: #f2f2f2; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17pt;
+    font-family: Roboto_REG;
+}
+
+
+/***************************************/ 
+/* Introduction Section */ 
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; 
+    min-height: 70vh;
+    width: 100%;
+/*border: 2px solid #1C6EA4;*/ 
+}
+.title {
+    position: absolute;
+    left: 5em;
+    top: 10%;
+    width: fit-content;
+}
+
+.about_me {
+
+    position: absolute;
+    left: 22em;
+    top: 23%;
+    text-align: left;
+    color: white;
+    font-family: Roboto_REG;
+
+}
+.picture {
+
+    position: absolute;
+    border-radius: 100%;
+    right: 50em;
+    top: 10%;
+}
+
+
+
+/***************************************/ 
+/* Skills Section */
+.skill_sec  {
+    position: absolute;
+    left: 23em;
+    width: 40%;
+    padding: 15vh;
+    top: 40%;
+}
+.skills {
+    position: absolute;
+    left: 0.3em;
+    width: fit-content;
+    top: 0%;
+}
+.lang {
+    position: absolute;
+    color:white;
+    padding: 1vh;
+    left: 1.3em;
+    top: 30%;
+    text-align: left;
+    list-style-position: inside;
+    font-family: Sourcecode_Pro;
+}
+
+.lang a {
+    list-style-type: circle;
+}
+
+/***************************************/ 
+/* Experience  Section */
+#exp {
+    display: inline-grid;
+    position: absolute;
+    top: 80%;
+    left: 24em;
+    color: white;
+    grid-template-columns: auto 1fr;
+    font-family: Roboto_REG;
+    column-gap: 10px;
+}
+
+.exp_title {
+    width: fit-content;
+    position: relative;
+    top: 2.5em;
+    right: 8.7em;
+}
+/* Styling the experience history */
+.exp_hist {
+    text-align: left;
+    grid-column-start: 1;
+}
+.exp_hist li {
+    font-size: 0.9em;
+    padding: 15px;
+    border-left: white 2px solid;
+    transition: 0.3s;
+}
+
+.exp_hist li:hover {
+    background-color: rgba(246,160,153,1.00);
+}
+
+/* Styling the job description */
+.exp_desc, .BCBS {
+    grid-column-start: 2;
+    display: inline-block;
+    padding: 5px;
+}
+
+.exp_desc div {
+    text-align: left;
+}
+
+.UserTesting ul li {
+    list-style-position: inside;
+    padding: 5px;
+    list-style-type: circle;
+}
+
+.exp_desc ul li:nth-child(1) {
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+.exp_desc ul li:nth-child(2) {
+    list-style-type: none;
+}
+
+.BCBS {
+    display: none;
+}

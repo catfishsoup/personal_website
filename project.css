@@ -17,10 +17,41 @@
 /****************************/
 /* Project Title Customization */
 #projectTitle {
-    color: white; 
+    color: white;
+    width: fit-content;
     font-size: 4rem;
     font-family: Roboto_REG;
     margin-left: 9.5em;
+}
+
+/* View More Title Customization */
+.viewMore {
+    display: inline;
+    position: relative;
+    left: 96em;
+    width: fit-content;
+    font-size: 1.2rem;
+    font-family: Roboto_REG;
+}
+.viewMore a {
+    text-decoration: none;
+    color: white;
+}
+.viewMore::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(127, 255, 212);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+.viewMore:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /****************************/
@@ -42,11 +73,13 @@
     border-radius: 5px;
     width: 50ch;
     height: fit-content;
+    transition: 0.3s;
 }
 
-/* .project:hover {
+.project:hover {
+    transform: scale(1.05);
+}
 
-} */
 /* The top half of the card  */
 .spacer {
     padding: 5em;
@@ -100,7 +133,11 @@
 }
 
 .githubIcon {
-    border: 2px solid red;
+    position: absolute;
     width: 50px;
     height: 50px;
+    margin: 0;
+    right: 0.1em;
+    bottom: 0;
+    color: aqua;
 }

@@ -51,4 +51,9 @@ form input, #user_mess {
     transform: scale(1.05);
 }
 
+#field_info {
+    color: white;
+    margin-left: 39em;
+    font-family: Roboto_REG;
+}
 /* Multi Selection */

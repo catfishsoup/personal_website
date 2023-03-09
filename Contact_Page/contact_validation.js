@@ -9,6 +9,7 @@ function validateForm() {
         alert('Wrong email format');
         return false; 
     }
+    // TODO: Investigate why the form still submit even though wrong format? 
 
     
 }

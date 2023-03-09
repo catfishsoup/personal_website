@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="../general.css">
     <link rel="stylesheet" href="contact.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
         <ul id="nav-bar">
-            <li><a href="/Portfolio_Website/About Page/about.html">About</a></li>
-            <li><a href="/Portfolio_Website/Project Page/project.html">Projects</a></li>
-            <li><a href="/Portfolio_Website/Contact Page/contact.html">Contact</a></li>
+            <li><a href="../About_Page/about.html">About</a></li>
+            <li><a href="../Project_Page/project.html">Projects</a></li>
+            <li><a href="../Contact_Page/contact.html">Contact</a></li>
         </ul>
     </nav>
     <h1 id="title">Thank you for reaching out!</h1>
     <p id="field_info">Fields with * are required.</p>
-    <form action="contact_handler.php" method="POST">
-        <input type="text" id="fname" name="email" placeholder="* Email Address">
-        <input type="text" id="lname" name="fname" placeholder="* Full Name"><br>
-        <textarea placeholder="* Message" id="user_mess" name="user_mess"></textarea><br>
+    <form action="contact_handler.php" onsubmit="return validateForm()" method="POST" target="_blank">
+        <input type="text" id="fname" name="email" placeholder="* Email Address" required>
+        <input type="text" id="lname" name="fname" placeholder="Full Name"><br>
+        <textarea placeholder="* Message" id="user_mess" name="user_mess" required></textarea><br>
         <input type="submit" name="submit" id="submitBtn" value="Submit">
     </form>
+    <script src="contact_validation.js"></script>
 </body>
 </html>

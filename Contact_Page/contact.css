@@ -56,4 +56,8 @@ form input, #user_mess {
     margin-left: 39em;
     font-family: Roboto_REG;
 }
+
+input:required, textarea:required {
+    border: 1px red solid;
+}
 /* Multi Selection */

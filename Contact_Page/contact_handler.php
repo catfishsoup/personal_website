@@ -11,5 +11,8 @@ if(isset($_POST["submit"])) {
 
     mail($recipient, "Contact from Personal Portfolio Website", $txt, $headers); 
     header("Location: contact.php?mailsend");
+
+    echo "Success!";
+    //TODO: A confirmation page
 }
 ?>

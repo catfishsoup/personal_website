@@ -26,28 +26,78 @@ body {
     font-weight: normal;
 }
 
-nav {
-    min-height: 10vh;
+@font-face {
+    font-family: 'Stanley'; 
+    src: url(fonts/StanleyPersonalUse-BWnRd.ttf);
+    font-style: normal;
+    font-weight: normal; 
 }
-#nav-bar {
-    overflow: hidden; 
-    list-style-type: none;
-    position: relative;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1%;
-    width: 100%;
-  }
 
-#nav-bar a {
-    float: right; 
-    display: block;
-    color: #f2f2f2; 
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17pt;
-    font-family: Roboto_REG;
+#nav-bar {
+    display: flex;
+    background-color: #F88379;
+    margin-bottom: 0;
+    list-style-type: none;
 }
+
+#nav-bar li:not(:first-child) {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: Roboto_REG;
+    font-size: 15pt;
+    text-decoration: none;
+}
+
+#nav-bar li:last-child {
+    margin-right: 10px;
+}
+#nav-bar li a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    padding: 10px;
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 30pt;
+    font-family: Stanley;
+}
+
+/* Loader Screen */ 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 10000;
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
